@@ -24,24 +24,25 @@ def get_llama_response(prompt: str) -> str:
     )
     return output["choices"][0]["text"].strip()
 
-st.title("🤖 LLama Chatbot")
+st.title("🤖 Welcome to LLama Chatbot")
+st.write("This is a chatbot that uses the Llama model to answer questions about large language models.")
 
 if "chat_history" not in st.session_state:
     st.session_state["chat_history"] = []
 
 with st.form("chat_form", clear_on_submit=True):
-    user_input = st.text_input("Mesajınızı yazın:", "")
-    submitted = st.form_submit_button("Gönder")
+    user_input = st.text_input("Message:", "")
+    submitted = st.form_submit_button("Send")
 
 if submitted and user_input.strip():
-    st.session_state["chat_history"].append(("Siz", user_input))
-    with st.spinner("Llama düşünüyor..."):
+    st.session_state["chat_history"].append(("You", user_input))
+    with st.spinner("Llama is thinking..."):
         response = get_llama_response(user_input)
     st.session_state["chat_history"].append(("Llama", response))
 
 # Sohbet geçmişini göster
 for sender, message in st.session_state["chat_history"]:
-    if sender == "Siz":
+    if sender == "You":
         st.markdown(f"<div style='text-align: right; color: #1a73e8;'><b>{sender}:</b> {message}</div>", unsafe_allow_html=True)
     else:
         st.markdown(f"<div style='text-align: left; color: #34a853;'><b>{sender}:</b> {message}</div>", unsafe_allow_html=True) 
