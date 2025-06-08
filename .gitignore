@@ -16,7 +16,7 @@ __pycache__/
 venv/
 
 # Modeller
-models/*.bin
+models/*.gguf
 
 # veri
 data/*.pdf
