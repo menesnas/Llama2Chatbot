@@ -9,7 +9,7 @@ A local chatbot application designed for large language models. It offers a user
 ## Features
 
 - Provides more responsive answers to questions about large language models
-- Works with the local Llama 2 model
+- Works with the local Llama-2-7b model
 - Modern and simple Streamlit interface
 - Saves chat history
 - Fast and secure local processing

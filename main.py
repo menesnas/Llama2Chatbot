@@ -22,6 +22,7 @@ def load_llm():
 def create_prompt_template():
     """Prompt template oluştur"""
     template = """You are a helpful AI assistant. Try to answer the user's question as best as possible.
+    If it's casual conversation, respond in casual conversational terms, like greetings.
     If the question is about LLM (Large Language Model), artificial intelligence, machine learning or related technical topics, use the provided context.
     If the question is a general conversation, a polite expression, a greeting, etc., answer naturally.
     Only say "I don't know enough about this" if you can't find information in context on technical topics.
