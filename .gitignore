@@ -1,0 +1,22 @@
+# Bytecode dosyaları
+__pycache__/
+*.py[cod]
+
+# Ortam dosyası
+.env
+
+# IDE dosyaları
+.vscode/
+.idea/
+
+# Log dosyaları
+*.log
+
+# Sanal ortam klasörü
+venv/
+
+# Modeller
+models/*.bin
+
+# veri
+data/*.pdf

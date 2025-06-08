@@ -1,0 +1,32 @@
+# Ana LangChain kütüphaneleri
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-huggingface>=0.0.1
+
+# LLM ve Transformer kütüphaneleri
+torch>=2.0.0
+ctransformers>=0.2.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+
+# Vector Store
+faiss-cpu>=1.7.0
+
+# PDF işleme
+pypdf>=3.0.0
+
+# ArXiv API
+arxiv>=1.4.0
+
+# HTTP istekleri
+requests>=2.28.0
+
+# Yardımcı kütüphaneler
+numpy>=1.24.0
+
+streamlit
+llama-cpp-python
+
+
+# Ekstra (kullanışlı)
+python-dotenv>=1.0.0
